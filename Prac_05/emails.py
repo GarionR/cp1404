@@ -1,3 +1,5 @@
+# Code reviewed, I cannot see anywhere you need to change.
+
 email_names = {}
 email = input("Email: ")
 while email:
