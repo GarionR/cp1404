@@ -3,7 +3,6 @@ class ProgrammingLanguage:
 
     def __init__(self, name, typing, reflection, year):
         """
-
         name: str
         typing: str
         reflection: bool
@@ -16,8 +15,10 @@ class ProgrammingLanguage:
         self.year = year
 
     def is_dynamic(self):
-        return self.typing == "Dynamic"
+        """Determine if language is dynamic"""
+        return self.typing.lower() == "dynamic"
 
     def __str__(self):
+        """Default print return"""
         return "{}, {} Typing, Reflection={}, First appeared in {}".format(self.name, self.typing, self.reflection,
                                                                            self.year)
