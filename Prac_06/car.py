@@ -1,4 +1,6 @@
-"""CP1404/CP5632 Practical - Car class example."""
+"""
+CP1404/CP5632 Practical - Car class example.
+"""
 
 
 class Car:
@@ -29,3 +31,6 @@ class Car:
             self.fuel -= distance
         self.odometer += distance
         return distance
+
+    def __str__(self):
+        return "Car, fuel={}, odometer={}".format(self.fuel, self.odometer)
