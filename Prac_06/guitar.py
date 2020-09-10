@@ -1,5 +1,8 @@
 class Guitar:
 
+    CURRENT_YEAR = 2020
+    VINTAGE_THRESHOLD = 50
+
     def __init__(self, name="", year=0, cost=0):
 
         self.name = name
@@ -10,7 +13,7 @@ class Guitar:
         return "{} ({}) : {:,}".format(self.name, self.year, self.cost)
 
     def get_age(self):
-        return 2020 - self.year
+        return Guitar.CURRENT_YEAR - self.year
 
     def is_vintage(self):
-        return self.get_age() > 50
+        return self.get_age() > Guitar.VINTAGE_THRESHOLD
