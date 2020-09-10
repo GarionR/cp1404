@@ -19,6 +19,6 @@ class ProgrammingLanguage:
         return self.typing.lower() == "dynamic"
 
     def __str__(self):
-        """Default print return"""
+        """Default string return"""
         return "{}, {} Typing, Reflection={}, First appeared in {}".format(self.name, self.typing, self.reflection,
                                                                            self.year)
