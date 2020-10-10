@@ -16,6 +16,13 @@ class UnreliableCar(Car):
         self.reliability = reliability
 
     def drive(self, distance):
+        """Drive the UnreliableCar a given distance.
+
+        Drive given distance if car has enough fuel
+        or drive until fuel runs out return the distance actually driven.
+        If a random number between 0 and 100 is above reliability UnreliableCar
+        drives a distance of 0
+        """
         if self.reliability > random.randint(0, 100):
             distance_driven = super().drive(distance)
         else:
