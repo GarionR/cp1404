@@ -10,7 +10,7 @@ import random
 class UnreliableCar(Car):
     """Represent UnreliableCar Object"""
 
-    def __init__(self, name, fuel, reliability):
+    def __init__(self, name="", fuel=0, reliability=50.0):
         """Initialise a UnreliableCar instance, based on parent class Car."""
         super().__init__(name, fuel)
         self.reliability = reliability
